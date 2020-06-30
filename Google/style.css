@@ -1,0 +1,70 @@
+#header {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px;
+    grid-template-rows: 5px;
+    grid-template-areas: ". gmail images appli connexion";
+}
+
+#gmail {
+    grid-area: gmail;
+    align-self: center;
+    margin: auto;
+}
+
+#images {
+    grid-area: images;
+    align-self: center;
+    margin: auto;
+}
+
+#appli {
+    grid-area: appli;
+    align-self: center;
+    margin: auto;
+}
+
+#connexion {
+    grid-area: connexion;
+    align-self: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 50px 50px;
+    grid-template-areas:
+        ". logo ."
+        ". bar ."
+        ". buttons .";
+}
+
+#logo {
+    grid-area: logo;
+    align-self: end;
+    margin: auto;
+    justify-self: center;
+}
+
+#bar {
+    grid-area: bar;
+}
+
+#buttons {
+    display: flex;
+    grid-area: flexbox;
+}
+
+#recherche {
+    grid-area: recherche;
+}
+
+#chance {
+    grid-area: chance;
+}
